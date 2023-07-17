@@ -150,3 +150,22 @@ POST /change_parent/456
   "message": "Parent node changed successfully"
 }
 ```
+
+## Future Development
+
+## API Endpoints
+
+### DELETE /delete_node/{node_id}
+
+Delete current node from the tree.
+
+### POST /promote_node/{node_id}
+
+Change current node type from dev to manager or from manager to ceo.
+
+**Request Body:**
+```json
+{
+  "new_node_type": "manager|ceo"
+}
+```

@@ -27,9 +27,7 @@ async def get_node(node_id: str):
 @router.post("/add_new_node")
 async def add_node(parent_id: str, new_node: NewNode):
     nodes = load_nodes()
-    print('add new node')
     parent_node = find_node(nodes, parent_id)
-    print('parent new node')
     if parent_node:
         full_node = Node(
             name=new_node.name,
@@ -40,7 +38,6 @@ async def add_node(parent_id: str, new_node: NewNode):
             parentId=parent_node.get('id'),
             children=[],
         )
-        print('full node new')
         for attribute, value in new_node.model_dump().items():
             setattr(full_node, attribute, value)
         parent_node.setdefault("children", []).append(full_node.model_dump())
