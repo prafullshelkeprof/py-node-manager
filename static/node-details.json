@@ -1,0 +1,131 @@
+{
+  "name": "$",
+  "id": "100",
+  "nodeHeight": 0,
+  "nodeType": "root",
+  "children": [
+    {
+      "name": "A",
+      "id": "103",
+      "nodeHeight": 1,
+      "nodeType": "manager",
+      "departmentName": [
+        "department_1"
+      ],
+      "parentName": "$",
+      "parentId": "100",
+      "children": [
+        {
+          "name": "A1",
+          "id": "105",
+          "nodeHeight": 2,
+          "parentName": "A",
+          "parentId": 103
+        },
+        {
+          "name": "A2",
+          "id": "110",
+          "nodeHeight": 2,
+          "parentName": "A",
+          "parentId": 103,
+          "children": [
+            {
+              "name": "M",
+              "id": "24a2d9da-e0cc-45c1-93a8-abc77f93521e",
+              "nodeHeight": 3,
+              "nodeType": "dev",
+              "parentName": "B1",
+              "parentId": "130",
+              "children": [],
+              "departmentName": [
+                "hr"
+              ],
+              "preferredLang": []
+            }
+          ]
+        },
+        {
+          "name": "C",
+          "id": "115",
+          "nodeHeight": 2,
+          "parentName": "A",
+          "parentId": 103,
+          "children": [
+            {
+              "name": "C1",
+              "id": "120",
+              "nodeHeight": 3,
+              "parentName": "C",
+              "parentId": 115
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "id": "125",
+      "nodeHeight": 1,
+      "nodeType": "dev",
+      "preferredLang": [
+        "some lang",
+        "lang 2"
+      ],
+      "parentName": "$",
+      "parentId": 100,
+      "children": [
+        {
+          "name": "B1",
+          "id": "130",
+          "nodeHeight": 2,
+          "parentName": "B",
+          "parentId": 125,
+          "children": []
+        },
+        {
+          "name": "B2",
+          "id": "135",
+          "nodeHeight": 2,
+          "parentName": "B",
+          "parentId": 125,
+          "children": [
+            {
+              "name": "K",
+              "id": "01a803a1-32c2-446a-b9d4-f193004606c5",
+              "nodeHeight": 3,
+              "nodeType": "dev",
+              "parentName": "B",
+              "parentId": "125",
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "B3",
+          "id": "140",
+          "nodeHeight": 2,
+          "parentName": "B",
+          "parentId": 125,
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "X",
+      "id": "145",
+      "nodeHeight": 1,
+      "parentName": "$",
+      "parentId": 100,
+      "children": [
+        {
+          "name": "Z",
+          "id": "150",
+          "nodeHeight": 2,
+          "parentName": "X",
+          "parentId": 145,
+          "children": []
+        }
+      ]
+    }
+  ]
+}
