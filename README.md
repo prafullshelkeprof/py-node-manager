@@ -166,6 +166,6 @@ Change current node type from dev to manager or from manager to ceo.
 **Request Body:**
 ```json
 {
-  "new_node_type": "manager|ceo"
+  "new_node_type": "manager|dev"
 }
 ```
